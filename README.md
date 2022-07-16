@@ -1,4 +1,12 @@
 # headhunter_app
+Данные были получены с сайта hh.ru, с помощью функции https://github.com/shiriaeva/hh/blob/38a447654a53097cf8a5f15c9fb4ce50361d5fac/headhunter_app/hh_parser.py#L158
+которая вызывалась 3 раза https://github.com/shiriaeva/hh/blob/38a447654a53097cf8a5f15c9fb4ce50361d5fac/headhunter_app/main.py#L81
+https://github.com/shiriaeva/hh/blob/38a447654a53097cf8a5f15c9fb4ce50361d5fac/headhunter_app/main.py#L82
+https://github.com/shiriaeva/hh/blob/38a447654a53097cf8a5f15c9fb4ce50361d5fac/headhunter_app/main.py#L83
+соответственно в бд в таблице vacancy хранятся вакансии по запросам [.net framework](https://hh.ru/search/vacancy?text=.net+framework), [java](https://hh.ru/search/vacancy?text=java) и [php](https://hh.ru/search/vacancy?text=php)  
+
+таблица statistics хранит общую информацию по каждому запросу, полученную на основе спарсенных данных (количество вакансий по данному запросу, средняя и медианная зарплата (в руб.), города с наибольшим кол-вом вакансий, наиболее востребованные навыки по кол-ву упоминаний в вакансиях)  
+
 
 * запрос на создание вакансии  
 ![image](https://user-images.githubusercontent.com/84004210/179366046-b4b9b4ad-764e-453b-9964-c035ecf6a1cc.png)   
